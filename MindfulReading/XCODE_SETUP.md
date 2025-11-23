@@ -1,6 +1,6 @@
 # Xcode Project Setup Guide
 
-This guide walks you through creating the Xcode project for Mindful Reading from the provided source files.
+This guide walks you through creating the Xcode project for writemore from the provided source files.
 
 ## Step-by-Step Instructions
 
@@ -198,7 +198,7 @@ The app should build successfully and launch.
 
 1. The app will show a button to open Safari Extensions preferences
 2. Click the button (or manually: Safari → Preferences → Extensions)
-3. Check **Mindful Reading** in the list
+3. Check **writemore** in the list
 4. Click **Turn On**
 5. Grant permission for "Access to all websites"
 
@@ -251,7 +251,7 @@ The app should build successfully and launch.
    - Safari → Preferences → Advanced → Show Develop menu
 
 2. **Inspect Extension**:
-   - Develop → Web Extension Background Pages → Mindful Reading
+   - Develop → Web Extension Background Pages → writemore
    - Shows background script console
 
 3. **Inspect Content Scripts**:
@@ -263,7 +263,7 @@ The app should build successfully and launch.
 
 5. **Reload Extension**:
    - Safari → Preferences → Extensions
-   - Uncheck and re-check Mindful Reading
+   - Uncheck and re-check writemore
 
 ## Next Steps
 

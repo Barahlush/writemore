@@ -4,7 +4,7 @@ let storage = new StorageManager();
 // Initialize extension
 browser.runtime.onInstalled.addListener(async () => {
     await storage.initialize();
-    console.log('Mindful Reading Extension installed');
+    console.log('writemore Extension installed');
 });
 
 // Initialize storage on startup
@@ -178,4 +178,4 @@ browser.tabs.onActivated.addListener(async (activeInfo) => {
     await checkAndResetCycle();
 });
 
-console.log('Mindful Reading Extension background script loaded');
+console.log('writemore Extension background script loaded');

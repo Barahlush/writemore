@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Get Mindful Reading up and running in 5 minutes.
+Get writemore up and running in 5 minutes.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Get Mindful Reading up and running in 5 minutes.
 
 3. **Enable in Safari**:
    - Safari → Preferences → Extensions
-   - Check "Mindful Reading"
+   - Check "writemore"
    - Allow "Access to all websites"
 
 ### Option 2: Quick Manual Setup
@@ -134,7 +134,7 @@ Every new article requires writing about (or skipping) the previous one.
 
 ## Tips & Best Practices
 
-### Getting the Most Out of Mindful Reading
+### Getting the Most Out of writemore
 
 1. **Keep notes open**: Write in your preferred app, then paste
 2. **Write immediately**: Reflect while article is fresh

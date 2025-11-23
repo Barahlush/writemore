@@ -15,17 +15,17 @@ class ViewController: NSViewController {
     }
 
     func setupUI() {
-        appNameLabel.stringValue = "📚 Mindful Reading"
+        appNameLabel.stringValue = "✍️ writemore"
         appNameLabel.font = NSFont.systemFont(ofSize: 24, weight: .bold)
 
-        statusLabel.stringValue = "Welcome to Mindful Reading!"
+        statusLabel.stringValue = "Welcome to writemore!"
         statusLabel.font = NSFont.systemFont(ofSize: 14)
 
         enableButton.title = "Open Safari Extensions Preferences"
     }
 
     func checkExtensionStatus() {
-        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: "com.mindfulreading.MindfulReading-Extension") { (state, error) in
+        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: "com.writemore.MindfulReading-Extension") { (state, error) in
             DispatchQueue.main.async {
                 if let state = state {
                     if state.isEnabled {
@@ -45,7 +45,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction func openSafariExtensionPreferences(_ sender: Any) {
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: "com.mindfulreading.MindfulReading-Extension") { error in
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: "com.writemore.MindfulReading-Extension") { error in
             if let error = error {
                 DispatchQueue.main.async {
                     let alert = NSAlert()

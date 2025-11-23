@@ -1,4 +1,4 @@
-# 📚 Mindful Reading - Safari Extension
+# ✍️ writemore - Safari Extension
 
 A Safari extension for macOS that encourages thoughtful reading by requiring you to write a reflection before moving to the next article.
 
@@ -83,7 +83,7 @@ This promotes mindful reading and helps you retain more from what you read.
 
 5. **Enable in Safari**
    - Safari → Preferences → Extensions
-   - Check "Mindful Reading"
+   - Check "writemore"
    - Grant necessary permissions
 
 ## First Use
@@ -203,11 +203,11 @@ Click "View Full History" to see:
 ### Extension Not Working
 
 1. **Check if enabled**
-   - Safari → Preferences → Extensions → Mindful Reading (should be checked)
+   - Safari → Preferences → Extensions → writemore (should be checked)
 
 2. **Check permissions**
    - Extension needs "Access to all websites"
-   - Safari → Preferences → Extensions → Mindful Reading → Details
+   - Safari → Preferences → Extensions → writemore → Details
 
 3. **Check settings**
    - Click toolbar icon
@@ -309,7 +309,7 @@ MindfulReading/
    - Safari → Preferences → Advanced → Show Develop menu
 
 2. **Inspect extension**
-   - Develop → Web Extension Background Pages → Mindful Reading
+   - Develop → Web Extension Background Pages → writemore
    - Develop → Show Web Inspector (on any page with content script)
 
 3. **Check storage**
@@ -339,4 +339,4 @@ For issues, questions, or feature requests, please open an issue on GitHub.
 
 ---
 
-**Happy Mindful Reading! 📚**
+**Keep writing! 📚**

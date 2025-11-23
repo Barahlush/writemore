@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Mindful Reading",
+    "name": "writemore",
     "version": "1.0.0",
     "description": "Read one article at a time. Write 200+ words to unlock the next.",
 
@@ -40,7 +40,7 @@
 
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "Mindful Reading",
+        "default_title": "writemore",
         "default_icon": {
             "16": "icon-16.png",
             "32": "icon-32.png",
