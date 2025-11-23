@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mindful Reading</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <div class="popup-header">
+            <h1>📚 Mindful Reading</h1>
+            <div class="toggle-container">
+                <label class="toggle">
+                    <input type="checkbox" id="extensionEnabled">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">Extension Enabled</span>
+            </div>
+        </div>
+
+        <!-- Current Status -->
+        <div class="status-section">
+            <h2>Current Status</h2>
+            <div id="currentStatus"></div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-section">
+            <h2>Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value" id="totalArticles">0</div>
+                    <div class="stat-label">Total Read</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="writtenAbout">0</div>
+                    <div class="stat-label">Written About</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="skipped">0</div>
+                    <div class="stat-label">Skipped</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="settings-section">
+            <h2>Settings</h2>
+
+            <div class="setting-item">
+                <label for="resetTimer">Reset timer (hours):</label>
+                <select id="resetTimer">
+                    <option value="12">12 hours</option>
+                    <option value="24" selected>24 hours</option>
+                    <option value="36">36 hours</option>
+                    <option value="48">48 hours</option>
+                    <option value="72">72 hours</option>
+                </select>
+            </div>
+
+            <div class="setting-item">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="autoDetection">
+                    <span>Automatic article detection</span>
+                </label>
+                <p class="setting-description">
+                    Detect articles on any website, not just whitelisted domains
+                </p>
+            </div>
+
+            <div class="setting-item">
+                <label for="domainWhitelist">Domain Whitelist:</label>
+                <textarea
+                    id="domainWhitelist"
+                    placeholder="lesswrong.com&#10;astralcodexten.substack.com&#10;*.substack.com"
+                    rows="4"
+                ></textarea>
+                <p class="setting-description">
+                    One domain per line. Use *.domain.com for all subdomains.
+                </p>
+            </div>
+
+            <button id="saveSettings" class="btn btn-primary">Save Settings</button>
+        </div>
+
+        <!-- History -->
+        <div class="history-section">
+            <h2>Recent History</h2>
+            <div id="historyList"></div>
+            <button id="viewFullHistory" class="btn btn-secondary">View Full History</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+    "manifest_version": 2,
+    "name": "Mindful Reading",
+    "version": "1.0.0",
+    "description": "Read one article at a time. Write 200+ words to unlock the next.",
+
+    "icons": {
+        "48": "icon-48.png",
+        "96": "icon-96.png",
+        "128": "icon-128.png",
+        "256": "icon-256.png"
+    },
+
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "<all_urls>"
+    ],
+
+    "background": {
+        "scripts": [
+            "storage.js",
+            "background.js"
+        ],
+        "persistent": false
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": [
+                "article-detector.js",
+                "content.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": false
+        }
+    ],
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Mindful Reading",
+        "default_icon": {
+            "16": "icon-16.png",
+            "32": "icon-32.png",
+            "48": "icon-48.png"
+        }
+    },
+
+    "web_accessible_resources": [
+        "overlay.html",
+        "overlay.css"
+    ]
+}
